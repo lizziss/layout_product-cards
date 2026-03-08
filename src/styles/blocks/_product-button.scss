@@ -1,0 +1,17 @@
+.product__button {
+  height: 40px;
+  background-color: getcolor('blue-accent-color');
+  color: getcolor('primary-white-color');
+  border-radius: 5px;
+
+  @include font(700, 14px, 16px);
+
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: getcolor('primary-white-color');
+    color: getcolor('blue-accent-color');
+
+    @include border(1px, getcolor('blue-accent-color'));
+  }
+}
