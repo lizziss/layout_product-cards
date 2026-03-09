@@ -4,6 +4,6 @@
   line-height: $lh;
 }
 
-@mixin border($radius, $color) {
-  border: $radius solid $color;
+@mixin border($width, $color) {
+  border: $width solid $color;
 }
