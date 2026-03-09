@@ -5,21 +5,23 @@
   padding: 32px 16px 16px;
   width: 200px;
 
-  @include border(1px, getcolor('primary-white-color'));
+  @include border(1px, getcolor('border-light-color'));
 
   border-radius: 5px;
   background-color: getcolor('background-light-color');
-
-  &__image img {
-    aspect-ratio: 160 /134;
-    max-width: 100%;
-    object-fit: cover;
+  &__image {
+    display: block;
+    width: 100%;
   }
-
+  &__image img {
+    display: block;
+    width: 160px;
+    height: 134px;
+    margin: auto;
+  }
   &__content {
     display: flex;
     flex-direction: column;
-
     margin-top: 40px;
   }
 }
